@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #556B2F; /* Verde musgo */
+      background-color: #556B2F;
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       text-align: center;
@@ -65,32 +65,73 @@
     .botao-jogar:hover {
       background-color: #2e4a08;
     }
+
+    footer {
+      background-color: #3a5f0b;
+      padding: 40px 20px;
+      margin-top: 50px;
+    }
+
+    .autor {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .autor h2 {
+      margin-bottom: 10px;
+    }
+
+    .autor p {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      display: inline-block;
+      color: white;
+      transition: transform 0.2s ease;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.1);
+    }
+
+    .social-links svg {
+      width: 32px;
+      height: 32px;
+      fill: white;
+    }
   </style>
 </head>
 <body>
 
   <h1>Land Of Golems</h1>
-  <p>Ajude o Golem a se tornar poderoso, superando os desafios que a natureza irá colocar em seu caminho.</p>
+  <p>Você já conheceu alguma floresta encantada? Um modesto golem terá que enfrentar os seus medos e passar através dos obstáculos para alcançar o seu maior objetivo: se tornar rico e poderoso. Venha também participar desta aventura!</p>
 
   <div class="galeria">
     <img src="Game/Imagem.png" alt="Imagem do jogo 1">
     <img src="Game/Imagem1.png" alt="Imagem do jogo 2">
-    <img src="Game/Imagem2.png" alt="Imagem do jogo 3">
     <img src="Game/Imagem3.png" alt="Imagem do jogo 4">
     <img src="Game/Imagem4.png" alt="Imagem do jogo 5">
   </div>
 
-  <button class="botao-jogar" onclick="iniciarJogo()">Jogar</button>
+  <a class="botao-jogar" href="Game/index.html" target="_blank">Jogar</a>
 
- <iframe id="game-frame" src=""></iframe>
-
-<script>
-  function iniciarJogo() {
-    const iframe = document.getElementById("game-frame");
-      iframe.src = "Game/index.html";
-      iframe.scrollIntoView({ behavior: "smooth" });
-  }
-</script>
+  <footer>
+    <div class="autor">
+      <h2>Sobre o Autor</h2>
+      <p>Desenvolvido por [Seu Nome]. Sou apaixonado por jogos e desenvolvimento web, e esse é um dos meus projetos independentes.</p>
+      <div class="social-links">
+        <a href="https://github.com/GabGFS" target="_blank" title="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.5.5 0 6 0 12.5c0 5.3 3.4 9.8 8.2 11.4.6.1.8-.2.8-.5v-2c-3.3.7-4-1.6-4-1.6-.6-1.5-1.3-1.9-1.3-1.9-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 .1 1.6-.8 1.6-.8.2-.7.5-1.2.9-1.5-2.6-.3-5.3-1.3-5.3-6 0-1.3.5-2.3 1.2-3.1-.1-.3-.6-1.6.1-3.3 0 0 1-.3 3.2 1.2.9-.2 1.9-.3 2.9-.3s2 .1 2.9.3c2.2-1.5 3.2-1.2 3.2-1.2.7 1.7.2 3 .1 3.3.7.8 1.2 1.8 1.2 3.1 0 4.7-2.7 5.6-5.3 6 .5.4 1 .3 1.5 1.2v2.5c0 .3.2.6.8.5 4.8-1.6 8.2-6.1 8.2-11.4C24 6 18.5.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/gabrielle-felsky-soratto-9460201a7" target="_blank" title="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1 5 2.1 5 3.5zM0 24h5V7H0v17zm7.5-17h4.7v2.3h.1c.6-1 2.1-2.3 4.4-2.3 4.7 0 5.5 3.1 5.5 7.1V24h-5V14.5c0-2.3-.1-5.3-3.2-5.3-3.2 0-3.7 2.5-3.7 5.1V24h-5V7z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
