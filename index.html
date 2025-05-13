@@ -80,9 +80,14 @@
     <img src="Game/Imagem4.png" alt="Imagem do jogo 5">
   </div>
 
-  <a href="#game-frame" class="botao-jogar">Jogar</a>
+  <button class="botao-jogar" onclick="iniciarJogo()">Jogar</button>
 
-<iframe id="game-frame" src="Game/index.html" style="width: 100%; height: 600px; border: none;"></iframe>
-
+<iframe id="game-frame" src="" style="width: 100%; height: 600px; border: none;"></iframe>
+  
+  function iniciarJogo() {
+    document.getElementById("game-frame").src = "Game/index.html";
+    document.getElementById("game-frame").scrollIntoView({ behavior: "smooth" });
+  }
+</script>
 </body>
 </html>
