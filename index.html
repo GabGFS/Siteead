@@ -82,13 +82,15 @@
 
   <button class="botao-jogar" onclick="iniciarJogo()">Jogar</button>
 
-<iframe id="game-frame" src="" style="width: 100%; height: 600px; border: none;"></iframe>
+ <iframe id="game-frame" src=""></iframe>
 
 <script>
   function iniciarJogo() {
-    document.getElementById("game-frame").src = "Game/index.html";
-    document.getElementById("game-frame").scrollIntoView({ behavior: "smooth" });
+    const iframe = document.getElementById("game-frame");
+      iframe.src = "Game/index.html";
+      iframe.scrollIntoView({ behavior: "smooth" });
   }
 </script>
+
 </body>
 </html>
